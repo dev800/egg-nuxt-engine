@@ -1,0 +1,2 @@
+# egg-plugin-nuxt
+

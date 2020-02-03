@@ -1,0 +1,69 @@
+{
+  "name": "egg-nuxt-engine",
+  "version": "1.2.1",
+  "description": "The Nuxt plugin for eggjs.",
+  "eggPlugin": {
+    "name": "eggNuxt"
+  },
+  "keywords": [
+    "egg",
+    "eggPlugin",
+    "egg-plugin",
+    "nuxt",
+    "egg-nuxt-engine"
+  ],
+  "dependencies": {
+    "nuxt": "^2.3.4"
+  },
+  "devDependencies": {
+    "autod": "^3.0.0",
+    "autod-egg": "^1.0.0",
+    "egg": "^2.0.0",
+    "egg-bin": "^4.3.0",
+    "egg-ci": "^1.8.0",
+    "egg-mock": "^3.13.0",
+    "eslint": "^4.19.1",
+    "eslint-config-egg": "^5.1.0",
+    "webstorm-disable-index": "^1.2.0"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "scripts": {
+    "test": "npm run lint -- --fix && egg-bin pkgfiles && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "egg-bin pkgfiles --check && npm run lint && npm run cov",
+    "pkgfiles": "egg-bin pkgfiles",
+    "autod": "autod"
+  },
+  "files": [
+    ".autod.conf.js",
+    "app",
+    "lib",
+    "config",
+    "app.js"
+  ],
+  "ci": {
+    "version": "8, 9"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dev800/egg-nuxt-engine.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dev800/egg-nuxt-engine/issues"
+  },
+  "homepage": "https://github.com/dev800/egg-nuxt-engine",
+  "author": "dev800",
+  "license": "MIT",
+  "main": ".autod.conf.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  }
+}
