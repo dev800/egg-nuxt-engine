@@ -1,6 +1,6 @@
 {
   "name": "egg-nuxt-engine",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "The Nuxt plugin for eggjs.",
   "eggPlugin": {
     "name": "eggNuxt"
@@ -13,7 +13,7 @@
     "egg-nuxt-engine"
   ],
   "dependencies": {
-    "nuxt": "^2.3.4"
+    "nuxt": "^2.11.0"
   },
   "devDependencies": {
     "autod": "^3.0.0",

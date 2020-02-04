@@ -6,11 +6,14 @@ module.exports = app => {
 
   app.beforeStart(async () => {
     try {
-      await app.nuxtBuild.build();
+      setTimeout(async () => {
+        await app.nuxtBuild.build();
 
-      if (!app.config.nuxt.dev) {
-        console.log('[nuxt] Building done'); // eslint-disable-line no-console
-      }
+        if (!app.config.nuxt.dev) {
+          console.log('[nuxt] Building done'); // eslint-disable-line no-console
+        }
+      }, 800)
+
     } catch (error) {
       console.log('[nuxt] Building error', error); // eslint-disable-line no-console
       process.exit(1);
