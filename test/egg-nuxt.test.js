@@ -18,7 +18,7 @@ describe('test/egg-nuxt-engine.test.js', () => {
   it('should GET /', () => {
     return app.httpRequest()
       .get('/')
-      .expect('hi, eggNuxt')
+      .expect('hi, egg nuxt')
       .expect(200);
   });
 });

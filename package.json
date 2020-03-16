@@ -3,7 +3,7 @@
   "version": "1.2.2",
   "description": "The Nuxt plugin for eggjs.",
   "eggPlugin": {
-    "name": "eggNuxt"
+    "name": "nuxt"
   },
   "keywords": [
     "egg",
